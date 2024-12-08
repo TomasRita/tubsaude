@@ -1,0 +1,209 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    align-items: center;
+    margin: auto 5em;
+}
+.container .row{
+    display: flex;
+    margin:4em 6em;
+    align-items: center;
+}
+.container .row .card{
+    color: #343434;
+    border-radius: 6px;
+    padding: 4em;
+    margin:2em;
+    background: #F3F3F3;
+    box-shadow: 3px 3px 9px #00000010;
+}
+.container .row .card:nth-last-child(3){
+    background: #343434;
+    color: #fff;
+}
+.body {
+    text-align: center;
+}
+
+.title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.text {
+    font-size: .9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+.container .row .card span{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/*------------------------Add-List------------------------------*/
+.add_list {
+    margin:-1em 4em;
+    display: flex;
+}
+.add_list i{
+    margin:-1em 4em;
+    font-size: 1.4rem;
+}
+
+.especialidades-card {
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 3em;
+    margin:2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35em;
+    background: #343434;
+    box-shadow: 3px 3px 9px #00000010;
+}
+/* Estilo para o botão Adicionar Especialidade */
+.add-especialidade-btn {
+    margin-bottom: 10px;
+}
+
+.especialidades-card .add-especialidade-btn i{
+ position: absolute;
+ right: -2em;
+}
+.especialidades-card .add-especialidade-btn {
+    position: relative;
+    padding: 1.4em 2em;
+    width: 20em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: .9rem;
+    background: #34FDD9;
+}
+.especialidades-card .especialidades-list {
+    position: relative;
+    list-style-type: none;
+    padding:auto;
+    width: 100%;
+}
+
+/* Estilo para cada item da lista de especialidades */
+.especialidades-card .especialidades-list li {
+    max-width: 20em; /* Largura mínima do item */
+    font-size: .9rem;
+    margin:2em 0;
+    display: flex;
+    align-items: center;
+    white-space: wrap; /* Quebra de linha automática */
+    word-wrap: break-word; /* Quebra de palavra para texto longo */
+}
+.especialidades-card .especialidades-list li .remove-especialidade {
+    position: absolute;
+    left: 8em;
+    cursor: pointer;
+    color: #ffffff;
+}
+.text_aviso{
+    width: 100%;
+}
+
+.text_aviso span{
+    position: relative;
+    color: #ff0000;
+    display: flex;
+    align-items: center;
+    margin: 0 2.2em;
+}
+.text_aviso span i{
+ position: absolute;
+ right: 7em;
+}
+/*----------------List Marcações------------------*/
+.add_list .list-marcation{
+    margin:0em 3em;
+}
+.add_list .list-marcation .title{
+    background: #34FDD9;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: .8em 1em;
+    width: 90%;
+    max-width: 720px;
+    border-radius: 6px;
+}
+.add_list .list-marcation .content{
+    width: 100%;
+    height: 60vh;
+    overflow-y:auto;
+}
+.add_list .list-marcation .content::-webkit-scrollbar {
+    width: 6px; /* Reduza o tamanho da largura do scrollbar conforme necessário */
+}
+
+.add_list .list-marcation .content::-webkit-scrollbar-thumb {
+    background: #d6d6d6; /* Cor do thumb (alça do scrollbar) */
+}
+  /* Estilos para a lista de consultas */
+.list-marcation {
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Estilos para o título da lista */
+.list-marcation .title {
+    margin-bottom: 10px;
+}
+
+/* Estilos para o conteúdo da lista */
+.list-marcation .content {
+    display: flex;
+    width: 100%;
+   flex-direction: column;
+}
+
+/* Estilos para cada card de consulta */
+.card-consulta {
+    background: #ffffff;
+    box-shadow: 3px 3px 9px #00000010;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    width: 20em;
+    color: #343434;
+    font-size: 1rem;
+}
+
+/* Estilos para os parágrafos dentro do card */
+.card-consulta p {
+    margin: 5px 0;
+}
+
+/* Estilos para os títulos dos parágrafos */
+.card-consulta p strong {
+    font-weight: bold;
+}
+.card-consulta button {
+    color: #ffffff;
+    padding: 1em 2em;
+    margin:5px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: .9rem;
+    background: #34FDD9;
+}
+.card-consulta .btn-validar{
+    background: #343434;
+}
+
+  /**/

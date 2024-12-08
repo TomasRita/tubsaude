@@ -1,0 +1,72 @@
+.container-notification{
+    display:flex;
+    flex-direction: column;
+    width: 90em;
+    margin:4em 0;
+    margin-left:24em;
+}
+.container-notification h1{
+    background: #34FDD9;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 1em;
+    width: 19em;
+    margin:1em 0;
+    border-radius: 8px;
+}
+.container-notification .user-list-not {
+    width: 40%;
+    height: 50vh;
+    overflow-y: auto;
+    padding: 2em 10px;
+}
+.user-list-not::-webkit-scrollbar {
+    width: 6px; /* Reduza o tamanho da largura do scrollbar conforme necessário */
+}
+
+.user-list-not::-webkit-scrollbar-thumb {
+    background: #e0e0e0; /* Cor do thumb (alça do scrollbar) */
+}
+.container-notification .user-not{
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #3f3f3f;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.container-notification .user-info p {
+    margin: 5px 0;
+    font-size: .8rem;
+}
+
+.container-notification .user-email {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #c7c7c775;
+}
+
+.container-notification .user-description {
+    color: #c7c7c775;
+}
+.container-notification .user-date {
+    color: #c7c7c728;
+    font-size: .8rem;
+}
+.container-notification .user-date i{
+    color: #c7c7c728;
+    font-size: .8rem;
+}
+.container-notification .initial-circle {
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    font-size: .9rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}

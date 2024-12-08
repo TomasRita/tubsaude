@@ -1,0 +1,293 @@
+/*---------------main styele------------------------*/
+main {
+  display: flex;
+  padding: auto;
+  padding: 12em;
+  min-height: 100vh;
+  max-width: 1800px;
+}
+
+
+main section {
+   margin: 6em 0em;
+  }
+  
+  /* Estilos para a seção "Welcome" */
+  main .welcome{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main .welcome .hero {
+    max-width: 55%;
+  }
+  
+  main .welcome .hero .conteudo {
+    font-size: 1.1rem;
+    margin: 2em 0;
+  }
+  
+  main .welcome .hero .conteudo p {
+    color: #646464;
+    white-space: wrap;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  main .welcome .design  {
+    z-index: 0;
+    position: relative;
+  }
+  main .welcome .design .seta2 {
+    position: absolute;
+    right: 0;
+    max-width: 20%;
+  }
+  main .hero-luz {
+    position: absolute;
+    margin: 0em;
+
+  }
+  main .hero-luz .luz {
+    margin-top: 8em;
+  }
+  
+  main .welcome .img {
+    position: absolute;
+    right: 0;
+  }
+  
+  main .welcome img {
+    max-width: 40rem;
+  }
+  
+  main .welcome .logo {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 6rem;
+  }
+  
+  main .welcome .button {
+    text-align: center;
+    background: #34FDD9;
+    padding: 1em 2em;
+    border-radius: 4px;
+    background: #646464;
+    width: 30%;
+    justify-content: center;
+    display: flex;
+    font-size: 0.9rem;
+    align-items: center;
+  }
+  main .welcome .hero{
+    z-index: 1;
+  }
+  
+  main .welcome .button a {
+    color: #fff;
+  }
+  
+  main .welcome .design {
+    position: absolute;
+    left: 0;
+    margin: 0 4em;
+    max-width: 90%;
+  }
+  
+  main .welcome .design img {
+    max-width: 100%;
+  }
+  
+  /* Estilos para a seção "Service" */
+  main .service {
+    display: flex;
+    margin-left: 0em;
+    margin: 8em 0em 0em;
+    flex-direction: column;
+  }
+  
+  main .service h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #34FDD9;
+  }
+  
+  main .service .conteudo {
+    margin: 2em 0;
+    color: #646464;
+    white-space: wrap;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  
+  main .service .conteudo p {
+    max-width: 50%;
+  }
+  
+  main .service .conteudo ul {
+    margin: 2em 0;
+  }
+  
+  main .service .conteudo ul li {
+    margin: 0.8em 0;
+    list-style: square;
+  }
+  
+  main .service .conteudo ul li a {
+    color: #646464;
+  }
+  
+  main .service img {
+    max-width: 60%;
+  }
+  
+  main .service .line-1 {
+    position: absolute;
+    left: 0;
+    margin: 6em 0.1em;
+  }
+  
+  main .service .line-2 {
+    position: absolute;
+    right: 0;
+    margin: 35em 8em;
+  }
+  
+  /* Estilos para a seção "About" */
+  main .about {
+    display: flex;
+    align-items: center;
+  }
+  
+  main .about .conteudo {
+    margin-left: 12em;
+  }
+  
+  main .about .conteudo h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #34FDD9;
+  }
+  
+  main .about .conteudo p {
+    margin-top: 2em;
+    color: #646464;
+    white-space: wrap;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  
+  main .about .img {
+    max-width: 55%;
+  }
+  
+  main .about .img img {
+    width: 50em;
+  }
+  
+  main .about .seta img {
+    position: absolute;
+    left: 0;
+    margin: 35em 0;
+    width: 18px;
+  }
+  
+  /* Estilos para a seção "Contact" */
+  main .contact {
+    position: relative;
+    display: flex;
+    margin: 22em 0;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../assets/formas/Rectangle.png');
+    background-size: 100%;
+    width: 100rem;
+    padding: 12em;
+    background-repeat: no-repeat;
+  }
+  
+  /* Estilos para o contêiner de design dentro da seção "Contact" */
+  main .contact .design {
+    position: absolute;
+  }
+  
+  /* Estilos para a segunda imagem de design dentro da seção "Contact" */
+  main .contact .design img {
+    width: 100em;
+  }
+  
+  /* Estilos para o formulário dentro da seção "Contact" */
+  main .contact form {
+    position: absolute;
+    top: 30%; /* Centralizar verticalmente */
+    left: 50%; /* Centralizar horizontalmente */
+    transform: translate(-50%, -50%); /* Centralizar no centro */
+    background: #fff;
+    padding: 20px;
+    width: 50em;
+    height: 56em;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.0470588235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  main .contact form .input {
+    position: relative;
+    margin: 1em 0;
+  }
+  
+  main .contact form .input i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    color: #646464;
+    transform: translateY(-50%);
+  }
+  
+  main .contact form h1 {
+    margin: 0.8em 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #34FDD9;
+    align-self: self-start;
+    margin-left: 1em;
+    color: #646464;
+  }
+  
+  main .contact form input {
+    padding: 1.4em 2em;
+    width: 28em;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    outline: none;
+    color: #646464;
+  }
+  
+  main .contact form textarea {
+    padding: 15px;
+    width: 28em;
+    outline: none;
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #646464;
+  }
+  
+  main .contact form button {
+    text-align: center;
+    cursor: pointer;
+    background: #34FDD9;
+    padding: 0.9em 2em;
+    border-radius: 4px;
+    width: 30em;
+    color: #fff;
+    background: #646464;
+    padding: 1.4em 3em;
+    border: none;
+    margin: 1.2em 0;
+  }

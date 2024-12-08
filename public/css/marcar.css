@@ -1,0 +1,53 @@
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:-4em auto;
+}
+section .img img{
+overflow: hidden;
+object-fit: cover;
+height: 50em;
+z-index: -1;
+ }
+section .img img{
+   width: 40em;
+}
+.ConsultaSection form{
+    display: block;
+    position: relative;
+    justify-content: center;
+    width: 40em;
+    height: 45em;
+    box-shadow: 3px 3px 12px #0000001f;
+}
+.ConsultaSection form .container .input-group{
+    margin: .6em 0;
+}
+.ConsultaSection form .container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ConsultaSection form .text{
+    margin:1em 4em;
+    margin-top: 3em;
+ }
+#registerForm .container select {
+    padding: 1.3em;
+    outline: none;
+    width: 23em;
+    color: #646464;
+    font-size: 0.9rem;
+  }
+.ConsultaSection form .button-group{
+    margin: 3em;
+ }
+.ConsultaSection form .avancar, #createbtn{
+ background: #646464;
+}
+.ConsultaSection form #voltar{
+    background: #34FDD9;
+ }

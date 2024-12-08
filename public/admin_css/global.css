@@ -1,0 +1,31 @@
+/*--------Configuração do style------------*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: roboto, serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-size: 65.2%;
+    overflow: hidden;
+    overflow-y: auto;
+    display:flex;
+    justify-content: space-between;
+  }
+  .counter {
+  background: red; /* Cor da bolinha */
+  color: white; /* Cor do texto dentro da bolinha */
+  border-radius: 50%; /* Deixa a bolinha com bordas arredondadas */
+  padding: 4px 8px; /* Espaçamento interno da bolinha */
+  font-size: 12px; /* Tamanho do texto dentro da bolinha */
+  top: -6px; /* Ajusta a posição vertical */
+  right: -8px; /* Ajusta a posição horizontal */
+}
+

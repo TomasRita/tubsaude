@@ -1,0 +1,194 @@
+.chatcontainer {
+    display: flex;
+    border: 1px solid;
+    justify-content: space-around; /* Adiciona espaço entre os elementos */
+    margin: 6em auto; /* Centraliza na horizontal */
+}
+
+
+.chat {
+    position: fixed;
+    top: 50%;
+    right: 24%;
+    transform: translate(50%, -50%);
+    width: 35%;
+    height: 75vh; /* Defina a mesma altura que a .user-list */
+    overflow-y: auto;
+    padding: 1.2em;
+    border-radius: 8px;
+    background: #343434;
+    box-shadow: 3px 3px 9px #00000010;
+}
+
+
+.user-list {
+    position: fixed;
+    top: 50%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 75vh;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 8px;
+    background: #343434;
+    box-shadow: 3px 3px 9px #00000010;
+}
+.user-list::-webkit-scrollbar {
+    width: 6px; /* Reduza o tamanho da largura do scrollbar conforme necessário */
+}
+
+.user-list::-webkit-scrollbar-thumb {
+    background: #646464; /* Cor do thumb (alça do scrollbar) */
+}
+#search-input{
+    width: 27em;
+    height: 8vh;
+    padding: 5px;
+    outline: none;
+    font-size: .8rem;
+    padding: 0 25px;
+    border: none;
+    background: #646464;
+    color: #c7c7c7;
+    margin: 2em 0;
+}
+
+#search-input::placeholder {
+    color: #c7c7c7;
+}
+.user {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #3f3f3f;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+.user-info {
+    position: relative;
+}
+.user-info p {
+    padding:0 1.2em;
+    margin: 5px 0;
+    font-size: .8rem;
+}
+
+.user-email {
+    position: absolute;
+    left: 3.4em;
+    top:-35px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #c7c7c775;
+}
+
+.user-description {
+    color: #c7c7c775;
+}
+.user-date {
+    color: #c7c7c728;
+    font-size: .8rem;
+}
+.user-date i{
+    color: #c7c7c728;
+    font-size: .8rem;
+}
+.obter-arquivo{
+ margin: 1em;
+}
+.obter-arquivo i{
+    color: #c7c7c728;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+.initial-circle {
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    font-size: .9rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinha as mensagens do usuário principal à direita */
+    padding: 10px;
+}
+
+.message-container.other-user {
+    align-items: flex-start; /* Alinha as mensagens dos outros usuários à esquerda */
+}
+.initial-circle-user{
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    font-size: .9rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.user-message-right {
+    background: #646464; /* Cor de fundo semelhante ao do Facebook */
+    color: #f3f3f3; /* Cor do texto */
+    padding: 1em; /* Espaçamento interno */
+    border-radius: 10px; /* Borda arredondada */
+    margin-top: 10px; /* Margem superior */
+    max-width: 70%; /* Largura máxima */
+    font-size: .9rem;
+    word-wrap: break-word; /* Quebra de palavra */
+}
+
+
+.input-container {
+    position: relative;
+}
+#message-input{
+    padding-right:5em;
+}
+.input-container i {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translateY(-50%);
+    color: #ffffff; /* Cor do ícone */
+    cursor: pointer;
+}
+
+.chat input[type="text"] {
+    width: calc(100% - 20px);
+    height: 8vh;
+    margin-top: 10px;
+    padding: 0 25px;
+    outline: none;
+    font-size: .8rem;
+    border: none;
+    color: #c7c7c7;
+    background: #646464;
+}
+.chat input[type="text"]::placeholder {
+    color: #c7c7c7;
+}
+#chat-box ::-webkit-scrollbar {
+    width: 6px; /* Reduza o tamanho da largura do scrollbar conforme necessário */
+}
+
+#chat-box ::-webkit-scrollbar-thumb {
+    background: #d6d6d6; /* Cor do thumb (alça do scrollbar) */
+}
+#chat-box {
+    height: 26em;
+    padding: 10px;
+    margin-top: 10px;
+    overflow-y: auto;
+}
+
+

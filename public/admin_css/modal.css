@@ -1,0 +1,124 @@
+#confirmarRemoverModal {
+    display: none;
+}
+/*-----------------Modal-dicionar-Especialidade-------------------*/
+#adicionarEspecialidadeModal{
+    align-items: center;
+}
+/* Estilo para o modal */
+.modal {
+    display: none; /* Oculta o modal por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Fundo semi-transparente */
+}
+
+/* Estilo para o conteúdo do modal */
+.modal-content {
+    position: relative;
+    background: #fefefe;
+    margin: 4em auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 40em;
+    height: 20em;
+}
+.modal-content #adicionarEspecialidadeBtn{
+    padding: 1.4em;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: .9rem;
+    background: #343434;
+}
+.modal-content #especialidadeInput{
+    margin: 1em 0;
+    padding: 1.4em;
+    color: #343434;
+    background: none;
+    outline: none;
+    font-size: .9rem;
+    border:1px solid #343434;
+}
+/*---------------Close--------------------------*/
+.close {
+    color: #aaa;
+    position: absolute; /* Define a posição absoluta para o botão */
+    top: 0.5em; /* Define a distância do topo */
+    right: 0.5em; /* Define a distância da direita */
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+/**/
+
+#confirmarRemoverModal{
+    align-items: center;
+}
+#confirmarRemoverModal .modal-content{
+    display: flex;
+    align-items: center;
+    padding: 4em 0;
+}
+#confirmarRemoverModal h2{
+    font-size: 1.4rem;
+    color: #343434;
+}
+#confirmarRemoverModal .modal-body{
+    color: #343434;
+    font-size: .9rem;
+}
+#confirmarRemoverModal .modal-footer button{
+    padding: 1em 0;
+    width: 10em;
+    color: #ffffff;
+    margin: 2em 1em;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: .9rem;
+    background: #34FDD9;
+}
+#confirmarRemoverModal .modal-footer .btn-secondary{
+    background: #343434;
+}
+#iddhour .modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
+}
+#iddhour .modal-content input[type="time"] {
+    margin: 1em 0;
+    padding: 1.6em;
+    width: 20em; /* Adjusted width for better fit */
+    color: #343434;
+    background: none;
+    outline: none;
+    font-size: 1rem;
+    border: 1px solid #343434;
+}
+#iddhour .modal-content button{
+    padding: 1.4em 0;
+    width: 22em;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: .9rem;
+    background: #34FDD9;
+}

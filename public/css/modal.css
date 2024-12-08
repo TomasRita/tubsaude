@@ -1,0 +1,324 @@
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    position: relative;
+    background: #fff;
+    margin: 6% auto;
+    padding: 20px;
+    width: 40em;
+    height: 45em;
+  }
+  
+  .close {
+    position: absolute;
+    right: 0;
+    margin: 0 1em;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+.modal form{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 2em 0;
+  }
+  
+  .modal form h2 {
+    font-size: 1.4rem;
+    color: #646464;
+    margin: 10px 0;
+  }
+  
+  .input-group {
+    position: relative;
+    top: 20px;
+  }
+  
+  .input-group input {
+    margin: 10px 0;
+    outline: none;
+    padding: 1.4em 2em;
+    width: 25em;
+  }
+  
+  .input-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    color: #646464;
+    transform: translateY(-50%);
+  }
+  
+  .modal form span {
+    margin: 2.5em 2em;
+    align-self: start;
+    cursor: pointer;
+  }
+  
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -0.8em;
+  }
+  
+  .button-group button {
+    text-align: center;
+    background: #34FDD9;
+    padding: 0.9em 2em;
+    border-radius: 4px;
+    flex: 1;
+    margin: 5px;
+    color: #fff; /* cor do texto */
+    background: #34FDD9; /* cor do fundo */
+    border: none;
+    cursor: pointer;
+    padding: 1.4em 3em;
+    width: 25em;
+    transition: background-color 0.3s ease;
+  }
+  .button-group button:hover {
+    background-color: #02fccf; /* escurece a cor do fundo em 10% */
+  }
+  #EnterBtn{
+    background: #646464;
+  }
+  #createAccountBtn {
+    background: #646464;
+  }
+  
+  i {
+    font-size: 1.4em;
+  }
+  
+  /*Modal de Registro */
+  #registerFormModal .container {
+    overflow: auto; /* Adiciona scrollbar apenas quando necessário */
+    height: 15em; /* Altura máxima do contêiner */
+    margin-left: 1em;
+  }
+  
+  #registerFormModal form .button-group {
+    margin: 4em 0;
+  }
+  
+  /* Estilizando o scrollbar para navegadores WebKit (Chrome, Safari, Opera) */
+  #registerFormModal .container::-webkit-scrollbar {
+    width: 5px; /* Largura do scrollbar */
+  }
+  
+  #registerFormModal .container::-webkit-scrollbar-thumb {
+    background-color:none; /* Cor do thumb (alça do scrollbar) */
+    border-radius: 8px; /* Borda do thumb */
+
+  }
+  
+  /* Estilizando o scrollbar para navegadores que suportam CSS Scrollbars Module Level 1 (Firefox) */
+  #registerFormModal .container {
+    scrollbar-width:thin; /* Define a largura do scrollbar */
+    scrollbar-color: #888 transparent; /* Cor do thumb e da track */
+  }
+  
+  #registerFormModal .container::-webkit-scrollbar-track {
+    background-color: transparent; /* Cor do fundo do scrollbar */
+  }
+  
+  .input-group input[type=date] {
+    color: #646464;
+    font-size: 0.9rem;
+    padding: 1.2em;
+    width: 23em;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Estilize o texto dentro do campo de entrada, se desejar */
+  .input-group input[type=date]::-moz-placeholder {
+    color: #646464; /* Defina a cor do texto do espaço reservado */
+  }
+  .input-group input[type=date]::placeholder {
+    color: #646464; /* Defina a cor do texto do espaço reservado */
+  }
+  
+  #registerFormModal .container select {
+    padding: 1.2em;
+    outline: none;
+    width: 23em;
+    color: #646464;
+    font-size: 0.9rem;
+  }
+  /*----------------Modal--Esqueceu--Senha--------------------*/
+  #forgotPasswordModal .modal-content #forgotPasswordForm{
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 3em 0;
+  }
+  #forgotPasswordForm .conteudo {
+    font-size: .9rem;
+    color: #646464;
+  }
+  #forgotPasswordForm h2 {
+    font-size: 1.4rem;
+    color: #646464;
+    margin: 10px 0;
+  }
+#forgotPasswordModal .modal-content #forgotPasswordForm .container{
+  margin: 4em 0;
+}
+#forgotPasswordModal .modal-content #forgotPasswordForm .button-group button:nth-last-child(1){
+    background: #646464;
+  }
+ /*----------------Modal--Nova--Senha--------------------*/
+#insertNewPasswordModal .modal-content #insertNewPasswordForm{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        margin: 3em 0;
+}
+#insertNewPasswordModal h2 {
+        font-size: 1.4rem;
+        color: #646464;
+}
+#insertNewPasswordModal .modal-content #insertNewPasswordForm .container{
+      margin: 4em 0;
+}
+ #insertNewPasswordModal .modal-content #insertNewPasswordForm .button-group button{
+        background: #646464;
+}
+
+ /*----------------Modal--Código--De--Confirmação--------------------*/
+
+ #confirmCodeModal .modal-content #confirmCodeForm{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 3em 0;
+}
+#forgotPasswordForm .conteudo {
+    font-size: .9rem;
+    color: #646464;
+}
+#confirmCodeModal h2 {
+    font-size: 1.4rem;
+    color: #646464;
+    margin: 10px 0;
+}
+#confirmCodeModal .conteudo {
+    font-size: .9rem;
+    color: #646464;
+  }
+#confirmCodeModal .modal-content #confirmCodeForm .container{
+  margin: 4em 0;
+}
+#confirmCodeModal .modal-content #confirmCodeForm .button-group{
+ margin: 2.6em 0;
+}
+#confirmCodeModal .modal-content #confirmCodeForm .button-group button:nth-last-child(2){
+    background: #646464;
+}
+#confirmCodeModal .input-group {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#confirmCodeModal .input-group input {
+    text-align: center;
+    padding:1.4em;
+    font-size: .9rem;
+    margin: 0 1em;
+    width: 16%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#confirmCodeModal .progress{
+  position: absolute;
+  display: flex;
+  margin:1em .8em;
+  color: #646464;
+}
+
+/**Codigo de Verification Senha*/
+
+#confirmCodeModalSenha .modal-content #confirmCodeFormSanha{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 3em 0;
+}
+#confirmCodeModalSenha h2 {
+  font-size: 1.4rem;
+  color: #646464;
+  margin: 10px 0;
+}
+#confirmCodeModalSenha .conteudo {
+  font-size: .9rem;
+  color: #646464;
+}
+#confirmCodeModalSenha .modal-content #confirmCodeFormSanha .container{
+margin: 4em 0;
+}
+#confirmCodeModalSenha .modal-content #confirmCodeFormSanha .button-group{
+margin: 2.6em 0;
+}
+#confirmCodeModalSenha .modal-content #confirmCodeFormSanha .button-group button:nth-last-child(2){
+  background: #646464;
+}
+#confirmCodeModalSenha .input-group {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+#confirmCodeModalSenha .input-group input {
+  text-align: center;
+  padding:1.4em;
+  font-size: .9rem;
+  margin: 0 1em;
+  width: 16%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#confirmCodeModalSenha .progress{
+position: absolute;
+display: flex;
+margin:1em .8em;
+color: #646464;
+}
+#registerFormResert{
+  margin:4em 0;
+}
+#registerModalResert .button-group{
+  margin:2em 0;
+}
+#EnterBtnResert{
+  background: #646464;
+}

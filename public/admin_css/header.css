@@ -1,0 +1,67 @@
+header{
+    height: 100vh;
+    margin:8em;    
+}
+.nav-bar {
+    width: 20em;
+    position: fixed;
+    background: #343434;
+    box-shadow: 3px 3px 9px #0000002a;
+    color: #fff;
+    border-radius: 16px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -5em;
+}
+.logo {
+    margin: 8em 0;
+}
+
+.logo svg {
+    width: 90%; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    fill: #fff; /* Cor do logotipo */
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 8em;
+}
+
+ul li a {
+    font-size: .9rem;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 1.2em 3em;
+}
+ul li a.ative{
+    background: #347065;
+    width: 90%;
+}
+/* Ícones */
+ i {
+    margin-right: 1em;
+    font-size: 1.4rem;
+}
+
+/* Botão Sair */
+#sair {
+    position: relative;
+    margin-top: -2em;
+}
+#sair i {
+    color: #ff0000; 
+    position: absolute;
+}
+
+#sair button {
+    color: #ff0000; /* Cor do botão */
+    border: none;
+    background: none;
+    padding: 4px 2.5em;
+    cursor: pointer;
+}

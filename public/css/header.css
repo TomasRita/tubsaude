@@ -1,0 +1,108 @@
+/*--------Configuração do style------------*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: roboto, serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-size: 65.2%;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  /*-----------------header style--------------------*/
+  header {
+    display: flex;
+    justify-content: center;
+    border: 1px solid rebeccapurple;
+  }
+  
+  header nav {
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.9rem;
+    padding: 0 4em;
+    background: #fff;
+    box-shadow: 3px 3px 12px #00000007;
+  }
+  
+  nav .logo {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 7rem;
+  }
+  
+  nav a {
+    color: #646464;
+  }
+  
+  nav a.ative {
+    color: #34FDD9;
+  }
+  
+  nav ul a {
+    font-weight: 300;
+    margin: 0 1em;
+  }
+  
+  nav ul a:hover {
+    color: #34FDD9;
+    transition: 0.3s all;
+  }
+  
+  nav .button {
+    text-align: center;
+    background: #34FDD9;
+    padding: 0.9em 2em;
+    border-radius: 4px;
+  }
+  
+  nav .button a {
+    color: #fff;
+  }
+  a{
+    cursor: pointer;
+}
+/* Estilo para o ícone do perfil */
+.buttonavatar{
+  width: 5em; /* Defina o tamanho desejado para o ícone */
+  height: 5em; /* Defina o tamanho desejado para o ícone */
+  border-radius: 100%;
+  border:1px solid #34FDD9;
+  overflow: hidden;
+}
+
+.buttonavatar .avatar_header img {
+  width: 100%;
+  object-fit: cover;
+}
+.buttonavatar .avatar_header img:hover::before {
+  content: "Perfil"; /* Texto a ser exibido ao passar o cursor sobre o ícone */
+  position: absolute; /* Posição absoluta em relação ao ícone */
+  background: #000; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  padding: 5px auto; /* Espaçamento interno */
+  border-radius: 5px; /* Borda arredondada */
+  top: 50%; /* Ajuste a posição verticalmente */
+  left: 50%; /* Ajuste a posição horizontalmente */
+  transform: translate(-50%, -50%); /* Centraliza horizontal e verticalmente */
+  display: none; /* Inicialmente oculto */
+}
+
+
+/* Exibir o texto ao passar o cursor sobre o ícone */
+.buttonavatar .avatar_header img:hover::before {
+  display: block; /* Exibir o texto ao passar o cursor sobre o ícone */
+}
